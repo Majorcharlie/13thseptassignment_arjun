@@ -1,0 +1,23 @@
+package map;
+import java.util.*;
+
+public class map1 {
+
+    public static void main(String[] args) {
+        
+        HashMap<String, Integer> hashMap = new HashMap<>();
+
+        
+        hashMap.put("a", 1);
+        hashMap.put("r", 2);
+        hashMap.put("j", 3);
+        hashMap.put("u", 4);
+        hashMap.put("n", 5);
+
+        
+        System.out.println(hashMap);
+        for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+    }
+}
